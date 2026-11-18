@@ -64,8 +64,8 @@ a{color:#1F4FD8}a:hover{color:#163A9E}
 <span style="color: #50565F; font-size: 15px">Per bug report with my AI workflow, always reviewed by me</span>
 </div>
 <div style="flex: 1 1 240px; padding: 28px 24px; display: flex; flex-direction: column; gap: 6px">
-<span style="font-family: 'Space Grotesk', Inter, sans-serif; font-size: clamp(2rem, 5vw, 2.4rem); font-weight: 600; line-height: 1.1">Few escapes</span>
-<span style="color: #50565F; font-size: 15px">Low number of bugs reaching production, thanks to QA process, automation and AI</span>
+<span style="font-family: 'Space Grotesk', Inter, sans-serif; font-size: clamp(2rem, 5vw, 2.4rem); font-weight: 600; line-height: 1.1">0–1</span>
+<span style="color: #50565F; font-size: 15px">Production bugs per weekly release, kept low by QA process, automation and AI</span>
 </div>
 </div>
 </div>
@@ -156,7 +156,7 @@ a{color:#1F4FD8}a:hover{color:#163A9E}
 <span style="padding: 4px 10px; border-radius: 999px; border: 1px solid #DADBD4; color: #3D434B">Appium · Robot Framework · Java</span>
 </div>
 <h3 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-size: 1.45rem; font-weight: 600; line-height: 1.2">Mobile automation from scratch</h3>
-<p style="margin: 0; font-size: 16px">An e-learning app for iOS and Android with releases every two weeks and only manual testing. I evaluated the tools, set up the mobile framework and automated the whole user flow: login, joining a virtual class, audio and video, and in-class activities.</p>
+<p style="margin: 0; font-size: 16px">An e-learning app for iOS and Android with releases every two weeks and only manual testing. On my own, I evaluated the tools, built the mobile framework and automated the whole user flow: login, joining a virtual class, audio and video, and in-class activities.</p>
 <p style="margin: 0; font-size: 16px; font-weight: 500">Every bi-weekly release got checked against the full student journey on both platforms.</p>
 </article>
 
@@ -172,12 +172,12 @@ a{color:#1F4FD8}a:hover{color:#163A9E}
 
 <article style="flex: 1 1 320px; min-width: 0; background: #FFFFFF; border: 1px solid #DADBD4; border-radius: 12px; padding: 30px; display: flex; flex-direction: column; gap: 16px">
 <div style="display: flex; flex-wrap: wrap; gap: 8px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px">
-<span style="padding: 4px 10px; border-radius: 999px; background: #15181C; color: #FFFFFF">CASE-04 · RESILIENCE</span>
-<span style="padding: 4px 10px; border-radius: 999px; border: 1px solid #DADBD4; color: #3D434B">k6 · Proxyman</span>
+<span style="padding: 4px 10px; border-radius: 999px; background: #15181C; color: #FFFFFF">CASE-04 · INCIDENT</span>
+<span style="padding: 4px 10px; border-radius: 999px; border: 1px solid #DADBD4; color: #3D434B">k6 · AI-assisted scripting</span>
 </div>
-<h3 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-size: 1.45rem; font-weight: 600; line-height: 1.2">Tests against request flooding</h3>
-<p style="margin: 0; font-size: 16px">Built DDoS-style tests that fire bursts of repeated requests, like a user hammering “Pay”, to check that rate limiting kicks in. Simulated timeouts, server errors and 429 responses with proxy breakpoints, and checked that price and quantity can’t change mid-payment.</p>
-<p style="margin: 0; font-size: 16px; font-weight: 500">The payment flow is now verified to hold up under real pressure.</p>
+<h3 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-size: 1.45rem; font-weight: 600; line-height: 1.2">Checking the fixes after a DDoS attack</h3>
+<p style="margin: 0; font-size: 16px">Our production site was hit by a DDoS attack, and I was asked to verify the fixes. I got up to speed with k6 quickly and, with AI help, wrote scripts that reproduce attack-like traffic: bursts of repeated requests to key pages and the payment flow, to see whether rate limiting holds.</p>
+<p style="margin: 0; font-size: 16px; font-weight: 500">The fixes were checked with repeatable tests instead of waiting for the next attack.</p>
 </article>
 
 </div>
@@ -272,7 +272,8 @@ a{color:#1F4FD8}a:hover{color:#163A9E}
 <ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; font-size: 16px">
 <li>Built Playwright/TypeScript automation from scratch for the admin web, kiosk and box office ticket sales, running in Azure DevOps CI</li>
 <li>Automated the full purchase flow, from ticket selection to email delivery, with a custom Node.js test inbox service</li>
-<li>Tested payment and ticket-printer integrations under load and failure: timeouts, 5xx, 429 and request flooding</li>
+<li>After a DDoS attack on the site, learned k6 and wrote attack-like traffic scripts with AI help to verify the fixes</li>
+<li>Tested payment and ticket-printer integrations under failure: timeouts, 5xx and 429 simulated with Proxyman</li>
 <li>Introduced AI-assisted QA with Claude Code, Rovo MCP and custom skills and agents</li>
 </ul>
 </div>
@@ -280,7 +281,7 @@ a{color:#1F4FD8}a:hover{color:#163A9E}
 <h4 style="margin: 0; font-size: 1.05rem; font-weight: 600">E-learning platform, iOS and Android <span style="font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; font-weight: 400; color: #50565F">· 10/2022 – 06/2025</span></h4>
 <ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; font-size: 16px">
 <li>Planned and coordinated mobile testing for bi-weekly releases; owned release test plans and regression checklists</li>
-<li>Automated the full mobile user flow with Appium, Robot Framework and Java: login, joining a class, audio and video, in-class activities</li>
+<li>Built mobile test automation on my own with Appium, Robot Framework and Java, covering the full user flow: login, joining a class, audio and video, in-class activities</li>
 <li>Aligned mobile and web QA processes to keep coverage consistent</li>
 <li>Maintained bug metrics to find high-risk areas and prioritize testing</li>
 </ul>
